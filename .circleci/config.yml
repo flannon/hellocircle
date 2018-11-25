@@ -22,8 +22,8 @@ jobs:
         #- image:  scholzj/circleci-centos-golang:latest # the primary container, where your job's commands are run
     steps:
       - checkout # check out the code in the project directory
-      - add_ssh_keys:
-          fingerprints:
-            - "68:60:ee:a9:da:a4:82:49:3e:6d:9f:14:af:26:01:69"
+        #- add_ssh_keys:
+        #  fingerprints:
+        ##    - "68:60:ee:a9:da:a4:82:49:3e:6d:9f:14:af:26:01:69"
       - run: echo "hello world" # run the `echo` command
 
